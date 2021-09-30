@@ -4,8 +4,9 @@ function Main(props) {
     
     return (
         <section className="main">
-            <Form />
-            <List />
+            <Form onAddItem={props.onAddItem}/>
+            <List onDeleteItem={props.onDeleteItem} onCheckItem={props.onCheckItem} onUncheckItem={props.onUncheckItem}
+                  todos={props.todos}  />
         </section>
     )
 }

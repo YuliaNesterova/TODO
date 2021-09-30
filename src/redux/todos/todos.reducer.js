@@ -1,4 +1,5 @@
 const initialState = [];
+
 const todosReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'FETCH_TODOS_SUCCESS':
